@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Taller 2 TypeScript</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='icon' href='data:,'>
+        <script type='module' src='./scripts/main.js'></script>
+        <!-- Incluir Bootstrap para el estilo de las tablas -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: darkcyan;">
+            <a class="navbar-brand" href="#">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-tv-icon-download-in-svg-png-gif-file-formats--television-antenna-screen-user-interface-pack-icons-1502172.png" alt="Logo" style="width: 30px; height: 30px;">
+                <span style="color: white;"> TV Series</span>
+            </a>
+        </nav>
+        <br>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-8">
+                    <table class="table table-striped table-bordered" id="series">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Channel</th>
+                                <th>Seasons</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div class="mt-3">
+                        <p id="averageSeasonsText" class="text-right font-weight-bold">Seasons average: 0</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" id="cardDetails" style="display: none;">
+                        <img id="imageDetails" class="card-img-top" src="" alt="Series Image">
+                        <div class="card-body">
+                            <h5 class="card-title" id="titleDetails"></h5>
+                            <p class="card-text" id="descriptionDetails"></p>
+                            <a href="#" class="btn btn-primary" id="linkDetails" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
